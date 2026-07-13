@@ -1,6 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
+import AppLayout from "./pages/AppLayout";
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
       <Routes>
         {/* Auth Pages - No Navbar/Footer */}
         <Route path="/login" element={<Login />} />
+
+        {/* Main Pages - With Navbar/Footer */}
+        <Route path="/" element={<AppLayout />}></Route>
       </Routes>
     </>
   );
