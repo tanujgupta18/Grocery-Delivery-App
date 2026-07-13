@@ -2,6 +2,7 @@ import { Toaster } from "react-hot-toast";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -24,7 +25,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
 
         {/* Main Pages - With Navbar/Footer */}
-        <Route path="/" element={<AppLayout />}></Route>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Routes>
     </>
   );
