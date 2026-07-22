@@ -10,11 +10,12 @@ import frozen_foods from "./frozen_foods.png";
 import personal_care from "./personal_care.png";
 import baby_care from "./baby_care.png";
 import meat_seafood from "./meat_seafood.png";
-
+import delivery_truck from "./delivery_truck.svg";
 import hero_bg from "./hero_bg.jpeg";
 
 export const assets = {
   hero_bg,
+  delivery_truck,
 };
 
 export const heroSectionData = {
@@ -45,6 +46,12 @@ export const categoriesData = [
   { slug: "baby-care", name: "Baby Care", image: baby_care },
   { slug: "dairy-eggs", name: "Dairy & Eggs", image: dairy_eggs },
 ];
+
+export const appPromoBannerData = {
+  title: "Get fresh groceries in minutes",
+  description:
+    "Download the Instacart app for exclusive deals, real-time tracking, and the freshest selection delivered right to your door.",
+};
 
 export const dummyProducts = [
   {
