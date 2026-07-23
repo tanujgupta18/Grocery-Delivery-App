@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
 import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         {/* Main Pages - With Navbar/Footer */}
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />
+          <Route path="products" element={<Products />} />
         </Route>
       </Routes>
     </>
