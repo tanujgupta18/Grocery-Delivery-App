@@ -24,10 +24,7 @@ const Footer = () => {
             <div className="flex gap-3">
               {footerData.brand.socials.map((social, i) => (
                 <a
-<<<<<<< HEAD
                   key={i}
-=======
->>>>>>> 0038cf51c509f52f20a87781d7839d982d53dbee
                   href={social.link}
                   className="size-9 rounded-lg bg-white/10 flex-center hover:bg-white/2"
                 >

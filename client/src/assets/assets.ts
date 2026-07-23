@@ -1,4 +1,12 @@
-import { TruckIcon, LeafIcon, ClockIcon, ShieldCheckIcon } from "lucide-react";
+import {
+  TruckIcon,
+  LeafIcon,
+  ClockIcon,
+  ShieldCheckIcon,
+  MapPinIcon,
+  PhoneIcon,
+  MailIcon,
+} from "lucide-react";
 import { SiFacebook, SiX, SiInstagram } from "@icons-pack/react-simple-icons";
 
 import fruits_vegetables from "./fruits_vegetables.png";
