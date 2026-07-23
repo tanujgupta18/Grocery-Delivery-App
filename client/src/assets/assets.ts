@@ -1,4 +1,5 @@
 import { TruckIcon, LeafIcon, ClockIcon, ShieldCheckIcon } from "lucide-react";
+import { SiFacebook, SiX, SiInstagram } from "@icons-pack/react-simple-icons";
 
 import fruits_vegetables from "./fruits_vegetables.png";
 import dairy_eggs from "./dairy_eggs.png";
@@ -51,6 +52,54 @@ export const appPromoBannerData = {
   title: "Get fresh groceries in minutes",
   description:
     "Download the Instacart app for exclusive deals, real-time tracking, and the freshest selection delivered right to your door.",
+};
+
+export const footerData = {
+  brand: {
+    name: "Instacart",
+    description:
+      "Bringing fresh, organic groceries straight from local farms to your doorstep. Nourish your home with Earth's finest.",
+    socials: [
+      { icon: SiFacebook, link: "#" },
+      { icon: SiX, link: "#" },
+      { icon: SiInstagram, link: "#" },
+    ],
+  },
+
+  sections: [
+    {
+      title: "Quick Links",
+      links: [
+        { label: "All Products", to: "/products" },
+        { label: "Flash Deals", to: "/deals" },
+        { label: "Track Order", to: "/orders" },
+        { label: "Delivery Partner", to: "/delivery" },
+      ],
+    },
+    {
+      title: "Customer Service",
+      links: [
+        { label: "My Account", to: "#" },
+        { label: "Order History", to: "#" },
+        { label: "Addresses", to: "#" },
+        { label: "Help Center", href: "#" },
+      ],
+    },
+  ],
+
+  contact: [
+    { icon: MapPinIcon, text: "123 Green Valley Rd, Portland" },
+    { icon: PhoneIcon, text: "+1 (111) 123-4567" },
+    { icon: MailIcon, text: "hello@example.com" },
+  ],
+
+  bottom: {
+    copyright: "© 2026 Instacart. All rights reserved.",
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms of Service", href: "#" },
+    ],
+  },
 };
 
 export const dummyProducts = [
