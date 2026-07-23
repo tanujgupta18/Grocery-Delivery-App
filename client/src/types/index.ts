@@ -14,3 +14,8 @@ export interface Product {
   discount: number;
   createdAt: string;
 }
+
+export interface CartItem {
+  product: Product;
+  quantity: number;
+}
