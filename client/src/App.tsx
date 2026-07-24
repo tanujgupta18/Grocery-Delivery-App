@@ -6,6 +6,12 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import FlashDeals from "./pages/FlashDeals";
 import ProductPage from "./pages/ProductPage";
+import SearchResults from "./pages/SearchResults";
+import ProtectedRoute from "./components/ProtectedRoute";
+import MyOrders from "./pages/MyOrders";
+import OrderTracking from "./pages/OrderTracking";
+import Checkout from "./pages/Checkout";
+import Addresses from "./pages/Addresses";
 
 const App = () => {
   return (
@@ -33,6 +39,13 @@ const App = () => {
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<ProductPage />} />
           <Route path="deals" element={<FlashDeals />} />
+          <Route path="search" element={<SearchResults />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="orders" element={<MyOrders />} />
+            <Route path="orders/:id" element={<OrderTracking />} />
+            <Route path="addresses" element={<Addresses />} />
+          </Route>
         </Route>
       </Routes>
     </>
