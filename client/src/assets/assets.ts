@@ -119,6 +119,11 @@ export const statusColors: Record<string, string> = {
   Cancelled: "bg-red-100 text-red-700",
 };
 
+export const iconsForLeafpad = {
+  truck: "https://cdn-icons-png.flaticon.com/512/3097/3097180.png",
+  destination: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+};
+
 export const dummyProducts = [
   {
     _id: "69c22613ae75a98c7cd13b3b",
